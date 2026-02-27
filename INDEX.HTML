@@ -1,1 +1,292 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RSS Gestión Documental</title>
+  <meta name="description" content="Gestión integral y preauditoría documental. Programa Express de Auditoría Interna y Orden Documental (7 días)." />
+  <link rel="icon" href="favicon.png" />
 
+  <style>
+    :root{--bg:#0b1220;--card:#121a2b;--text:#eaf0ff;--muted:#aab6d6;--accent:#4da3ff;}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial;
+      background:radial-gradient(1200px 600px at 20% 0%, #142044, var(--bg));
+      color:var(--text); line-height:1.5;}
+    a{color:inherit}
+    .wrap{max-width:1020px;margin:0 auto;padding:26px 18px 64px}
+    header{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    .brand{display:flex;gap:12px;align-items:center}
+    .brand img{height:44px;width:auto;display:block}
+    nav{display:flex;gap:10px;flex-wrap:wrap}
+    nav a{padding:10px 12px;border:1px solid rgba(255,255,255,.12);border-radius:12px;text-decoration:none}
+    nav a:hover{border-color:rgba(255,255,255,.25)}
+    .hero{margin-top:22px;display:grid;grid-template-columns:1.25fr .75fr;gap:16px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr}}
+    .card{background:rgba(18,26,43,.92);border:1px solid rgba(255,255,255,.10);border-radius:18px;padding:18px}
+    h1{margin:0 0 8px;font-size:clamp(26px,4vw,40px);letter-spacing:-.02em}
+    h2{margin:0 0 8px;font-size:20px}
+    .muted{color:var(--muted)}
+    .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .btn{display:inline-block;padding:12px 14px;border-radius:14px;text-decoration:none;font-weight:700}
+    .btn.primary{background:var(--accent);color:#071225}
+    .btn.secondary{border:1px solid rgba(255,255,255,.16)}
+    .btn.ghost{border:1px dashed rgba(255,255,255,.20);color:var(--text)}
+    .grid{margin-top:14px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+    .grid2{margin-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    @media (max-width:900px){.grid2{grid-template-columns:1fr}}
+    .pill{display:inline-flex;gap:8px;align-items:center;padding:8px 10px;border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);color:var(--muted);font-size:14px}
+    footer{margin-top:26px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+    .small{font-size:12px;color:var(--muted)}
+    ul{margin:10px 0 0;padding-left:18px}
+    .tag{font-size:12px;color:var(--muted);border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:999px;display:inline-block}
+    .price{font-size:22px;font-weight:800;margin:6px 0 10px}
+    .kpi{display:grid;gap:8px;margin-top:10px}
+    .kpi div{padding:10px 12px;border-radius:14px;border:1px solid rgba(255,255,255,.10);background:rgba(8,12,22,.35)}
+    .hr{height:1px;background:rgba(255,255,255,.10);margin:14px 0}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <img src="rss_logo_220.png" alt="RSS Gestión Documental" />
+        <div>
+          <div style="font-weight:900;line-height:1.1">RSS Gestión Documental</div>
+          <div class="muted" style="font-size:14px">Gestión integral y preauditoría documental</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#programa">Programa 7 días</a>
+        <a href="#paquetes">Paquetes</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="card">
+        <h1>Ordeno y fortalezco tu <span style="color:var(--accent)">sistema documental</span> para que esté listo para <span style="color:var(--accent)">auditorías y operación diaria</span>.</h1>
+        <p class="muted">
+          Si hoy tus documentos están dispersos, con versiones mezcladas o procedimientos incompletos,
+          implemento un orden práctico y trazable: estructura, control de versiones, detección de vacíos y plan de acción.
+        </p>
+
+        <div class="cta">
+          <a class="btn primary" href="https://wa.me/542236944386" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn secondary" href="mailto:rss.gestiondocumental@gmail.com">Email</a>
+          <a class="btn ghost" href="#diagnostico">Hacer diagnóstico</a>
+        </div>
+
+        <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+          <span class="pill">✅ Mar del Plata / Argentina</span>
+          <span class="pill">✅ Presencial y remoto</span>
+          <span class="pill">✅ Enfoque express (7 días)</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Resultado típico (sin humo)</h2>
+        <p class="muted" style="margin-top:0">
+          Convierto documentación dispersa en un sistema ordenado y auditable:
+          carpetas coherentes, control de versiones claro, procedimientos revisados y un informe técnico
+          con plan de acción para corregir no conformidades y vacíos críticos.
+        </p>
+
+        <div class="kpi">
+          <div><strong>✅ Más control</strong><div class="small">Menos duplicados, menos confusión de versiones.</div></div>
+          <div><strong>✅ Más trazabilidad</strong><div class="small">Estructura clara y lógica de uso.</div></div>
+          <div><strong>✅ Más preparación</strong><div class="small">Lista para auditoría interna/externa.</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARA QUIEN ES / NO ES -->
+    <section class="grid2" style="margin-top:14px">
+      <div class="card">
+        <h2>Para quién es</h2>
+        <ul class="muted">
+          <li>Equipos que necesitan ordenar documentación para auditorías (internas/externas).</li>
+          <li>Empresas con carpetas “históricas” sin estructura ni control de versiones.</li>
+          <li>Áreas con procedimientos desactualizados o incompletos.</li>
+          <li>Operaciones que necesitan trazabilidad y orden para trabajar mejor.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Para quién no es</h2>
+        <ul class="muted">
+          <li>Si buscás “solo diseño” sin mejorar contenido, estructura y control real.</li>
+          <li>Si no hay disponibilidad mínima del equipo para validar documentación clave.</li>
+          <li>Si se pretende un sistema 100% automatizado y complejo en 7 días (esto es express y práctico).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="grid">
+      <div class="card">
+        <div class="tag">Servicio</div>
+        <h2 style="margin-top:8px">Gestión integral documental</h2>
+        <p class="muted">Orden, consistencia y criterios claros para sostener documentación operativa y auditable.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Servicio</div>
+        <h2 style="margin-top:8px">Preauditoría documental</h2>
+        <p class="muted">Revisión preventiva para detectar riesgos, faltantes y no conformidades antes de una auditoría.</p>
+      </div>
+      <div class="card">
+        <div class="tag">Servicio</div>
+        <h2 style="margin-top:8px">Plan de acción técnico</h2>
+        <p class="muted">Mapa de mejoras priorizadas + recomendaciones concretas para ejecutar sin fricción.</p>
+      </div>
+    </section>
+
+    <!-- PROGRAMA -->
+    <section id="programa" class="card" style="margin-top:14px">
+      <h2>Programa Express: Auditoría Interna y Orden Documental (7 días)</h2>
+      <p class="muted" style="margin-top:0">Qué incluye:</p>
+
+      <div class="grid" style="margin-top:10px">
+        <div class="card" style="padding:14px">
+          <div style="font-weight:900">Día 1–2</div>
+          <ul class="muted">
+            <li>Revisión de estructura documental actual</li>
+            <li>Análisis de control de versiones</li>
+            <li>Revisión de procedimientos existentes</li>
+          </ul>
+        </div>
+        <div class="card" style="padding:14px">
+          <div style="font-weight:900">Día 3–4</div>
+          <ul class="muted">
+            <li>Detección de no conformidades documentales</li>
+            <li>Identificación de vacíos críticos</li>
+            <li>Mapa de mejoras prioritarias</li>
+          </ul>
+        </div>
+        <div class="card" style="padding:14px">
+          <div style="font-weight:900">Día 5–7</div>
+          <ul class="muted">
+            <li>Reorganización de carpetas y estructuración</li>
+            <li>Ajustes básicos documentales</li>
+            <li>Entrega de informe técnico con plan de acción</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="hr"></div>
+      <p class="small">
+        Modalidad: presencial (Mar del Plata) o remoto. Alcance y tiempos se ajustan según volumen y estado inicial de la documentación.
+      </p>
+    </section>
+
+    <!-- DIAGNOSTICO -->
+    <section id="diagnostico" class="card" style="margin-top:14px">
+      <h2>Diagnóstico rápido (3 preguntas)</h2>
+      <p class="muted" style="margin-top:0">Respondé estas 3 y te digo por WhatsApp qué conviene hacer primero:</p>
+      <ol class="muted">
+        <li>¿Dónde está hoy la documentación (Drive / servidor / carpetas locales / mixto)?</li>
+        <li>¿Tienen control de versiones (sí/no) y quién aprueba los cambios?</li>
+        <li>¿Hay auditoría próxima o el objetivo es ordenar para operación diaria?</li>
+      </ol>
+
+      <div class="cta" style="margin-top:10px">
+        <a class="btn primary"
+           href="https://wa.me/542236944386?text=Hola%20RSS%2C%20quiero%20un%20diagn%C3%B3stico%20r%C3%A1pido.%0A1)%20Documentaci%C3%B3n%20hoy%20en%3A%20%0A2)%20Control%20de%20versiones%3A%20%0A3)%20Objetivo%2Fauditor%C3%ADa%3A%20"
+           target="_blank" rel="noopener">Responder por WhatsApp</a>
+
+        <a class="btn secondary" href="#paquetes">Ver paquetes</a>
+      </div>
+      <div class="small" style="margin-top:10px">Tip: copiá/pegá y completá las respuestas.</div>
+    </section>
+
+    <!-- PAQUETES -->
+    <section id="paquetes" class="card" style="margin-top:14px">
+      <h2>Paquetes de trabajo</h2>
+      <p class="muted" style="margin-top:0">Para que puedas elegir rápido según necesidad y urgencia:</p>
+
+      <div class="grid" style="margin-top:10px">
+        <div class="card" style="padding:14px">
+          <div class="tag">Más pedido</div>
+          <h2 style="margin-top:8px">Express 7 días</h2>
+          <div class="price">A convenir</div>
+          <ul class="muted">
+            <li>Revisión + detección de vacíos</li>
+            <li>Orden y estructura de carpetas</li>
+            <li>Informe técnico + plan de acción</li>
+          </ul>
+          <div class="cta">
+            <a class="btn primary"
+               href="https://wa.me/542236944386?text=Hola%20RSS%2C%20me%20interesa%20el%20paquete%20Express%207%20d%C3%ADas.%20%0A%C2%BFPod%C3%A9s%20contarme%20alcance%20y%20presupuesto%3F"
+               target="_blank" rel="noopener">Consultar</a>
+          </div>
+        </div>
+
+        <div class="card" style="padding:14px">
+          <div class="tag">Inicio</div>
+          <h2 style="margin-top:8px">Starter (orden base)</h2>
+          <div class="price">A convenir</div>
+          <ul class="muted">
+            <li>Estructura mínima recomendada</li>
+            <li>Criterios de nomenclatura</li>
+            <li>Checklist de control de versiones</li>
+          </ul>
+          <div class="cta">
+            <a class="btn primary"
+               href="https://wa.me/542236944386?text=Hola%20RSS%2C%20me%20interesa%20el%20paquete%20Starter%20(orden%20base).%20%0A%C2%BFMe%20orient%C3%A1s%20por%20WhatsApp%3F"
+               target="_blank" rel="noopener">Consultar</a>
+          </div>
+        </div>
+
+        <div class="card" style="padding:14px">
+          <div class="tag">Continuidad</div>
+          <h2 style="margin-top:8px">Mantenimiento mensual</h2>
+          <div class="price">A convenir</div>
+          <ul class="muted">
+            <li>Revisión mensual de cambios</li>
+            <li>Control de versiones y consistencia</li>
+            <li>Seguimiento del plan de acción</li>
+          </ul>
+          <div class="cta">
+            <a class="btn primary"
+               href="https://wa.me/542236944386?text=Hola%20RSS%2C%20quiero%20mantenimiento%20mensual%20documental.%20%0A%C2%BFC%C3%B3mo%20lo%20trabajamos%3F"
+               target="_blank" rel="noopener">Consultar</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="small" style="margin-top:10px">
+        Si más adelante querés, agrego una sección “Preguntas frecuentes” y “Entregables exactos” para cada paquete.
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="card" style="margin-top:14px">
+      <h2>Contacto</h2>
+      <p class="muted" style="margin-top:0">Escribime y te respondo con próximos pasos y una propuesta simple.</p>
+
+      <div class="cta" style="margin-top:10px">
+        <a class="btn primary" href="https://wa.me/542236944386" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+        <a class="btn secondary" href="mailto:rss.gestiondocumental@gmail.com">Enviar email</a>
+      </div>
+
+      <div class="small" style="margin-top:10px">
+        Email: rss.gestiondocumental@gmail.com · WhatsApp: +54 223 694-4386 · Zona: Mar del Plata / Argentina / remoto
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> RSS Gestión Documental</div>
+      <div class="muted">Sitio publicado sin costo</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
