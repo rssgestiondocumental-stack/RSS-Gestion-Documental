@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tu Proyecto</title>
+  <meta name="description" content="Presentación breve de tu proyecto y contacto." />
+  <style>
+    :root{--bg:#0b1220;--card:#121a2b;--text:#eaf0ff;--muted:#aab6d6;--accent:#4da3ff;}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial;
+      background:radial-gradient(1200px 600px at 20% 0%, #142044, var(--bg));
+      color:var(--text); line-height:1.5;}
+    a{color:inherit}
+    .wrap{max-width:980px;margin:0 auto;padding:28px 18px 60px}
+    header{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#8b5cff)}
+    nav{display:flex;gap:14px;flex-wrap:wrap}
+    nav a{padding:10px 12px;border:1px solid rgba(255,255,255,.12);border-radius:12px;text-decoration:none}
+    nav a:hover{border-color:rgba(255,255,255,.25)}
+    .hero{margin-top:26px;display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
+    @media (max-width:860px){.hero{grid-template-columns:1fr}}
+    .card{background:rgba(18,26,43,.92);border:1px solid rgba(255,255,255,.10);border-radius:18px;padding:18px}
+    h1{margin:0 0 8px;font-size:clamp(26px,4vw,42px);letter-spacing:-.02em}
+    .muted{color:var(--muted)}
+    .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .btn{display:inline-block;padding:12px 14px;border-radius:14px;text-decoration:none;font-weight:600}
+    .btn.primary{background:var(--accent);color:#071225}
+    .btn.secondary{border:1px solid rgba(255,255,255,.16)}
+    .grid{margin-top:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    @media (max-width:860px){.grid{grid-template-columns:1fr}}
+    .pill{display:inline-flex;gap:8px;align-items:center;padding:8px 10px;border-radius:999px;
+      border:1px solid rgba(255,255,255,.12);color:var(--muted);font-size:14px}
+    footer{margin-top:28px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+    input,textarea{width:100%;padding:12px 12px;border-radius:14px;border:1px solid rgba(255,255,255,.14);
+      background:rgba(8,12,22,.55);color:var(--text)}
+    label{font-size:14px;color:var(--muted)}
+    form{display:grid;gap:10px;margin-top:10px}
+    .small{font-size:12px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <div style="font-weight:800">TU PROYECTO</div>
+          <div class="muted" style="font-size:14px">Tu frase de valor en 1 línea</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h1>Ayudo a <span style="color:var(--accent)">[tu cliente ideal]</span> a lograr <span style="color:var(--accent)">[tu resultado]</span>.</h1>
+        <p class="muted">Acá contás en 2–3 líneas qué hacés, para quién y por qué te eligen. Simple, claro y humano.</p>
+        <div class="cta">
+          <a class="btn primary" href="https://wa.me/549TU_NUMERO" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="btn secondary" href="#contacto">Pedir presupuesto</a>
+          <a class="btn secondary" href="mailto:tuemail@correo.com">Email</a>
+        </div>
+        <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+          <span class="pill">✅ Respuesta rápida</span>
+          <span class="pill">✅ Atención en Mar del Plata / remoto</span>
+          <span class="pill">✅ Presupuesto sin cargo</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div style="font-weight:800;margin-bottom:6px">Lo que ofrezco</div>
+        <p class="muted" style="margin-top:0">3 bullets bien concretos:</p>
+        <ul class="muted" style="margin:0;padding-left:18px">
+          <li>Servicio 1 (qué incluye + beneficio)</li>
+          <li>Servicio 2 (qué incluye + beneficio)</li>
+          <li>Servicio 3 (qué incluye + beneficio)</li>
+        </ul>
+        <div class="small" style="margin-top:10px">Tip: si tenés 1 testimonio, ponelo acá.</div>
+      </div>
+    </section>
+
+    <section id="servicios" class="grid">
+      <div class="card">
+        <div style="font-weight:800">Servicio A</div>
+        <p class="muted">Explicación breve (qué es) + resultado (para qué sirve).</p>
+      </div>
+      <div class="card">
+        <div style="font-weight:800">Servicio B</div>
+        <p class="muted">Explicación breve (qué es) + resultado (para qué sirve).</p>
+      </div>
+      <div class="card">
+        <div style="font-weight:800">Servicio C</div>
+        <p class="muted">Explicación breve (qué es) + resultado (para qué sirve).</p>
+      </div>
+    </section>
+
+    <section id="sobre" class="card" style="margin-top:14px">
+      <div style="font-weight:800;margin-bottom:6px">Sobre mí</div>
+      <p class="muted" style="margin:0">
+        Mini bio en 4–6 líneas: quién sos, experiencia, enfoque de trabajo y qué te diferencia.
+      </p>
+    </section>
+
+    <section id="contacto" class="card" style="margin-top:14px">
+      <div style="font-weight:800;margin-bottom:6px">Contacto</div>
+      <p class="muted" style="margin-top:0">Dejame tu consulta y te respondo.</p>
+
+      <!-- Formulario sin backend: se puede reemplazar por Formspree (gratis) o Google Forms -->
+      <form onsubmit="event.preventDefault(); alert('Listo: reemplazá este formulario por un Google Form o Formspree para que te lleguen los mensajes.');">
+        <div>
+          <label>Nombre</label>
+          <input placeholder="Tu nombre" required />
+        </div>
+        <div>
+          <label>Email</label>
+          <input type="email" placeholder="tu@email.com" required />
+        </div>
+        <div>
+          <label>Mensaje</label>
+          <textarea rows="4" placeholder="Contame qué necesitás" required></textarea>
+        </div>
+        <button class="btn primary" type="submit" style="border:0;cursor:pointer">Enviar</button>
+        <div class="small">Si querés, te lo dejo conectado a un formulario gratis para que te lleguen los mensajes.</div>
+      </form>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> TU PROYECTO</div>
+      <div class="muted">Hecho con hosting gratis</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
